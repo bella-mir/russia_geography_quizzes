@@ -1,0 +1,7 @@
+{% extends "ssl.html"%} {% block container%}
+<h1 class="content">{{title}}</h1>
+<p class="content">{{text}}</p>
+<form method="get" action="{{url_for('login')}}">
+  <button type="submit">Login</button>
+</form>
+{% endblock %}

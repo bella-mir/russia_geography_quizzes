@@ -1,0 +1,15 @@
+.footer__dropdown{
+    display: none;
+    position: relative;
+    align-items: center;
+    z-index: 100;
+    width: 150px;
+    background-color: #748C7F;
+    color: white;
+    bottom: 100px;
+}
+
+
+
+
+

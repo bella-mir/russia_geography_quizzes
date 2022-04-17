@@ -1,0 +1,7 @@
+.footer__dropdown-item{
+    padding: 10px 30px 10px 30px;
+}
+
+.footer__dropdown-item:hover{
+    background-color: #94A69F;
+}
