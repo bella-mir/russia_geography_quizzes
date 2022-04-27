@@ -1,0 +1,20 @@
+.photo-grid__content{
+  display: grid;
+  grid-template-areas: "container";
+  place-items: center;
+  place-content: center;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+@media (min-width: 1280px) {
+    .photo-grid__content {
+      max-width: 1184px;
+    }
+  } 
+
+
+
+
+  

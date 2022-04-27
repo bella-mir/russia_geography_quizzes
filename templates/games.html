@@ -1,5 +1,83 @@
-{% extends "main.html"%}
-{% block container%}
-<h1 class = "content">{{title}}</h1>
-<p class = "content">{{text}}<p>
+{% extends "main.html"%} {% block container%}
+<h1 class="page__title">{{title}}</h1>
+<p class="page__subtitle">{{text}}</p>
+
+<section class="photo-grid">
+  <a href="https://belka-mironova.github.io/IndigenousPeoplesRussia/" class="photo-grid__content" target="_blank">
+    <!-- <img
+      src="static/images/__item1.png"
+      alt="Вид из окна поезда"
+      class="photo-grid__item"
+    /> -->
+    <div class="photo-grid__item" style="background-color: #3764E5;"></div>
+    <div class="photo-grid__overlay">
+      <h2 class="photo-grid__title">Indigenous peoples</h2>
+    </div>
+  </a>
+
+  <a href="#" class="photo-grid__content" target="_blank">
+    <!-- <img
+      src="static/images/__item2.png"
+      alt="Вид из окна поезда"
+      class="photo-grid__item"
+    /> -->
+    <div class="photo-grid__item" style="background-color: #FA7755;"></div>
+    <div class="photo-grid__overlay">
+      <h2 class="photo-grid__title">Regions</h2>
+      <p class="photo-grid__subtitle">Coming soon...</p>
+    </div>
+  </a>
+
+  <a href="" class="photo-grid__content" target="_blank">
+    <!-- <img
+      src="static/images/__item3.png"
+      alt="Вид из окна поезда"
+      class="photo-grid__item"
+    /> -->
+    <div class="photo-grid__item" style="background-color: #EEB1D2;"></div>
+    <div class="photo-grid__overlay">
+      <h2 class="photo-grid__title">Cities</h2>
+      <p class="photo-grid__subtitle">Coming soon...</p>
+    </div>
+  </a>
+
+  <a href="#" class="photo-grid__content" target="_blank">
+    <!-- <img
+      src="static/images/__item4.png"
+      alt="Вид из окна поезда"
+      class="photo-grid__item"
+    /> -->
+    <div class="photo-grid__item" style="background-color: #E5C158;"></div>
+    <div class="photo-grid__overlay">
+      <h2 class="photo-grid__title">Renamed Cities</h2>
+      <p class="photo-grid__subtitle">Coming soon...</p>
+    </div>
+  </a>
+
+  <a href="#" class="photo-grid__content" target="_blank">
+    <!-- <img
+      src="static/images/__item5.png"
+      alt="Вид из окна поезда"
+      class="photo-grid__item"
+    /> -->
+    <div class="photo-grid__item" style="background-color: #93BBA0;"></div>
+    <div class="photo-grid__overlay">
+      <h2 class="photo-grid__title">Geographical Darts</h2>
+      <p class="photo-grid__subtitle">Coming soon...</p>
+    </div>
+  </a>
+
+  <a href="{{url_for('contact')}}" class="photo-grid__content" target="_blank">
+    <!-- <img
+      src="static/images/__item6.png"
+      alt="Вид из окна поезда"
+      class="photo-grid__item"
+    /> -->
+    <div class="photo-grid__item" style="background-color: #F39527;"></div>
+    <div class="photo-grid__overlay">
+      <h2 class="photo-grid__title">???</h2>
+      <p class="photo-grid__subtitle">Tell us what you want to see here!</p>
+    </div>
+  </a>
+</section>
 {% endblock %}

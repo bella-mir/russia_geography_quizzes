@@ -1,11 +1,12 @@
-{% extends "ssl.html"%} {% block container%}
-<h1 class="content">{{title}}</h1>
-<p class="content">{{text}}</p>
-<p></p>
+{% extends "main.html"%} {% block container%}
+<div class="splash">
+<h1 class="page__title">{{title}}</h1>
+<p class="page__subtitle">{{text}}</p>
 <form method="get" action="{{url_for('login')}}">
-  <button type="submit">Login</button>
+  <button class="form__submit" type="submit">Login</button>
 </form>
 <form method="get" action="{{url_for('signup')}}">
-  <button type="submit">Sign up</button>
+  <button class="form__submit" type="submit">Sign up</button>
 </form>
+</div>
 {% endblock %}

@@ -1,0 +1,16 @@
+.form__error {
+  max-width: 358px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  z-index: 100;
+  opacity: 0;
+  height: 15px;
+}
+
+@media (max-width: 620px) {
+  .form__error {
+    width: 238px;
+  }
+}

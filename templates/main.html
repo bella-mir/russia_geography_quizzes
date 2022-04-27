@@ -1,19 +1,34 @@
 {% extends "index.html"%} {% block header%}
-<div class="header__logo"></div>
+{% if user %}
+<a href="{{url_for('home')}}" class="header__logo"></a>
+{% else %}
+<a href="{{url_for('splash')}}" class="header__logo"></a>
+{%endif%}
 <div class="header__lang">
-  <a href="{{url_for('home')}}" class="header__lang-link">Home</a>
-  <a href="{{url_for('profile')}}" class="header__lang-link">{{user}}</a>
+  {% if user %}
+  <!-- <a href="{{url_for('home')}}" class="header__lang-link">Home</a> -->
+  <a href="{{url_for('profile')}}" class="header__lang-link">{{user.upper()}}</a>
   <a href="{{url_for('logout')}}" class="header__lang-link">Log Out</a>
-  <a href="{{url_for('logout')}}" class="header__lang-link header__lang-link_selected">En</a>
+  <a href="#"><img src="static/images/language.svg" class = "header__lang-link header__lang-link_changer"></a>
+  {% else %}
+  <a href="#" class="header__lang-link">Ru</a>
+  <a href="" class="header__lang-link header__lang-link_selected">En</a>
+  {%endif%}
 </div>
 {% endblock %} {% block footer%}
 <nav class="footer__menu">
-
   <a href="{{url_for('about')}}" class="footer__menu-item">About the project</a>
 
   <a href="{{url_for('contact')}}" class="footer__menu-item" target="_blank"
     >Contact us</a
   >
+  {% if not user %}
+  <a href="{{url_for('signup')}}" class="footer__menu-item">Sign up</a>
+
+  <a href="{{url_for('login')}}" class="footer__menu-item" target="_blank"
+    >Login</a
+  >
+  {%endif%}
 </nav>
 <p class="footer__copyright">&copy;2022.Bella Mironova</p>
 {% endblock %}

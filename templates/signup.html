@@ -1,7 +1,48 @@
-{% extends "ssl.html"%} {% block container%}
-<h1 class="content">{{title}}</h1>
-<p class="content">{{text}}</p>
+{% extends "main.html"%} {% block container%}
+<h1 class="page__title">{{title}}</h1>
+<p class="page__subtitle">{{text}}</p>
+<form action="#" class="form">
+  <label for="name"><b>Name</b></label>
+  <input
+    class="form__input"
+    type="text"
+    placeholder="Your Name"
+    name="name"
+    required
+  />
+
+  <label for="email"><b>Email</b></label>
+  <input
+    class="form__input"
+    type="text"
+    placeholder="Enter Email"
+    name="email"
+    required
+  />
+
+  <label for="psw"><b>Password</b></label>
+  <input
+    class="form__input"
+    type="password"
+    placeholder="Enter Password"
+    name="psw"
+    required
+  />
+
+  <label for="psw-repeat"><b>Repeat Password</b></label>
+  <input
+    class="form__input"
+    type="password"
+    placeholder="Repeat Password"
+    name="psw-repeat"
+    required
+  />
+
+  <button type="submit" class="form__submit">Sign Up</button>
+  <p>Already have an account?</p>
+</form>
+
 <form method="get" action="{{url_for('login')}}">
-  <button type="submit">Login</button>
+  <button class="form__submit" type="submit">Login</button>
 </form>
 {% endblock %}

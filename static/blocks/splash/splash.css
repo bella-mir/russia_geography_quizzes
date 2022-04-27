@@ -1,0 +1,6 @@
+.splash {
+  background-image: url("../../images/__logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}

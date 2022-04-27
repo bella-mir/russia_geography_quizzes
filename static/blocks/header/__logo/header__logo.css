@@ -1,14 +1,15 @@
 .header__logo {
   background-image: url("../../../images/__logo.svg");
   background-repeat: no-repeat;
-  width: 142px;
-  height: 42px;
+  background-size: contain;
+  width: 80px;
+  height: 32px;
 }
 
 @media (min-width: 768px) {
   .header__logo {
-    background-size: 100%;
-    width: 176px;
+    background-size: contain;
+    width: 90px;
     height: 52px;
   }
-}
+} 

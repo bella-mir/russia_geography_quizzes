@@ -1,8 +1,9 @@
 .page {
   max-width: 1280px;
-  background-color: #2a2c2f;
+  min-height: 100vh;
+  background-color: #EADFCA;
   font-family: "Inter", "Arial", sans-serif;
-  color: white;
+  color: #90C5D9;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

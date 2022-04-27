@@ -1,22 +1,22 @@
 .content {
-  margin: 0 auto;
-  padding: 64px 5% 24px 5%;
+  margin: 50px auto;
+  padding: 20px 5% 24px 5%;
   max-width: 1184px;
-  max-height: 1184px;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
 }
 
 @media screen and (min-width: 768px) {
   .content {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 88px 3.1% 24px 3.1%;
+    align-items: left;
+    padding: 30px 3.1% 24px 3.1%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .content {
-    padding: 88px 48px 24px 48px;
+    padding: 30px 48px 24px 48px;
   } 
 }

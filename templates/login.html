@@ -1,12 +1,17 @@
-{% extends "ssl.html"%}
+{% extends "main.html"%}
 
 {% block container%}
-<h1 class = "content">{{title}}</h1>
-<p class = "content">{{text}}<p>
-  <form method="get" action="{{url_for('home')}}">
-    <button type="submit">Log in -> Home Page</button>
-  </form>
+<h1 class="page__title">{{title}}</h1>
+  <form class="form" method="get" action="{{url_for('home')}}">  
+        <label>Username : </label>   
+        <input class="form__input" type="text" placeholder="Enter Username" name="username" required>  
+        <label>Password : </label>   
+        <input class="form__input" type="password" placeholder="Enter Password" name="password" required>  
+        <button class="form__submit" type="submit">Login</button>   
+        <a class="form__link" href="#"> Forgot  password? </a>     
+</form>     
+  <p>Don't have an account?</p>
     <form method="get" action="{{url_for('signup')}}">
-        <button type="submit">Sign up</button>
+        <button class="form__submit" type="submit">Sign up</button>
       </form>
 {% endblock %}

@@ -1,5 +1,40 @@
-{% extends "main.html"%}
-{% block container%}
-<h1 class = "content">{{title}}</h1>
-<p class = "content">{{text}}<p>
+{% extends "main.html"%} {% block container%}
+<h1 class="page__title">{{title}}</h1>
+<p class="page__subtitle">{{text}}</p>
+<p></p>
+<form class="form" action="">
+  <label for="fname">First Name</label>
+
+  <input class="form__input" type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+  <label for="lname">Last Name</label>
+
+  <input
+  class="form__input"
+    type="text"
+    id="lname"
+    name="lastname"
+    placeholder="Your last name.."
+  />
+
+  <label for="country">Country</label>
+
+  <select class="form__input" id="country" name="country">
+    <option value="australia">Russia</option>
+    <option value="canada">USA</option>
+    <option value="usa">Other</option>
+  </select>
+
+  <label for="subject">Subject</label>
+
+  <textarea
+  class="form__input"
+    id="subject"
+    name="subject"
+    placeholder="Write something.."
+    style="min-height: 200px"
+  ></textarea>
+
+  <input class="form__submit" type="submit" value="Submit" />
+</form>
 {% endblock %}

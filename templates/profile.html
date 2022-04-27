@@ -1,5 +1,5 @@
 {% extends "main.html"%}
 {% block container%}
-<h1>Hello, {{user}}</h1>
-<p>{{text}}<p>
+<h1 class="page__title">Hello, {{user.upper()}}</h1>
+<p class="page__subtitle">{{text}}<p>
 {% endblock %}
