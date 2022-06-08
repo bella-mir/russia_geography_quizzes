@@ -1,17 +1,22 @@
-{% extends "main.html"%}
-
-{% block container%}
+{% extends "main.html"%} {% block container%}
 <h1 class="page__title">{{title}}</h1>
-  <form class="form" method="get" action="{{url_for('home')}}">  
-        <label>Username : </label>   
-        <input class="form__input" type="text" placeholder="Enter Username" name="username" required>  
-        <label>Password : </label>   
-        <input class="form__input" type="password" placeholder="Enter Password" name="password" required>  
-        <button class="form__submit" type="submit">Login</button>   
-        <a class="form__link" href="#"> Forgot  password? </a>     
-</form>     
-  <p>Don't have an account?</p>
-    <form method="get" action="{{url_for('signup')}}">
-        <button class="form__submit" type="submit">Sign up</button>
-      </form>
+
+<form class="form" method="POST" action="{{url_for(post)}}">
+
+  {{ form.hidden_tag() }}
+  {% for field in form %}
+    {% if field.widget.input_type != 'hidden' %} {{ field.label }} {% endif %}
+    {{ field }}
+  {% endfor %}
+
+</form>
+
+<a class="form__link" href="#"> {{password}}</a>
+    
+
+  <form method="get" action="{{url_for(direction)}}">
+    <p class="page__subtitle">{{question}}</p>
+    <button class="form__submit" type="submit">{{direction_text}}</button>
+  </form>
+</div>
 {% endblock %}

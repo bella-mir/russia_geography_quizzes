@@ -1,0 +1,5 @@
+.page__columns{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}

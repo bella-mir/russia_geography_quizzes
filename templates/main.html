@@ -6,7 +6,6 @@
 {%endif%}
 <div class="header__lang">
   {% if user %}
-  <!-- <a href="{{url_for('home')}}" class="header__lang-link">Home</a> -->
   <a href="{{url_for('profile')}}" class="header__lang-link">{{user.upper()}}</a>
   <a href="{{url_for('logout')}}" class="header__lang-link">Log Out</a>
   <a href="#"><img src="static/images/language.svg" class = "header__lang-link header__lang-link_changer"></a>

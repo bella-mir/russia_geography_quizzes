@@ -2,11 +2,13 @@
 <div class="splash">
 <h1 class="page__title">{{title}}</h1>
 <p class="page__subtitle">{{text}}</p>
+<div class = "page__buttons">
 <form method="get" action="{{url_for('login')}}">
   <button class="form__submit" type="submit">Login</button>
 </form>
 <form method="get" action="{{url_for('signup')}}">
   <button class="form__submit" type="submit">Sign up</button>
 </form>
+</div>
 </div>
 {% endblock %}

@@ -1,19 +1,20 @@
 .form__submit {
   width: 150px;
   height: 50px;
-  background: #93BBA0;
+  background-color: rgba(143, 127, 161, 0);
   border-radius: 15px;
-  color: #EEB1D2;
+  color: #eeb1d2;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-  margin-top: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
   outline: none;
-  border: none;
+  border: 0.3px solid #FFFFFF;
 }
 
 .form__submit:hover {
+  background-color: #FFFFFF;
   opacity: 0.8;
   cursor: pointer;
 }

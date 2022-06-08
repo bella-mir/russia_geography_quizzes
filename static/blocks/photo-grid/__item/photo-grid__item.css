@@ -2,6 +2,7 @@
   width: 288px;
   height: 288px;
   grid-area: container;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -18,9 +19,3 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .photo-grid__item {
-    max-width: 284px;
-    height: 284px;
-  }
-}
