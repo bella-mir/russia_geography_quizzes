@@ -22,9 +22,9 @@
 
 ## Roadmap
 
-- [] Integrate React.js quizzes into Flask environment
-- [] Save score history for each individual player
-- [] Differentiate access between general and admin accounts
+- Integrate React.js quizzes into Flask environment
+- Save score history for each individual player
+- Differentiate access between general and admin accounts
 
 
 ## Functionality: 
