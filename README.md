@@ -9,7 +9,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/belka-mironova/IndigenousPeoplesRussia.git
+   git clone https://github.com/bella-mir/IndigenousPeoplesRussia.git
    ```
 2. Install requirenments
    ```sh
